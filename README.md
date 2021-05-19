@@ -1,5 +1,5 @@
 ## Portfolio
-MY PORTFOLIO WEBSITE
+The website which is meant to provide a link to everything that I have done. 
 
 ## Description 
 This directory is simply my portfolio website. 
