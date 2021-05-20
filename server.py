@@ -3,9 +3,9 @@ import os
 import csv
 import smtplib
 
-igor_email = "igor.the.real.guy@gmail.com"
-igor_password = "passwordforapis"
-my_email = 'nicolas.villeneuve.01@gmail.com'
+igor_email = "THISEMAILACCOUNTISNTREAL@gmail.com"
+igor_password = "THISPASSWORDISNTREAL"
+my_email = 'THISEMAILISNTREAL@gmail.com'
 
 app = Flask(__name__)
 print(__name__)
@@ -38,7 +38,7 @@ def write_to_csv(data):
         with smtplib.SMTP('smtp.gmail.com') as connection:
             connection.starttls()
             connection.login(igor_email, igor_password)
-            connection.sendmail(from_addr=igor, to_addrs=my_email, msg=f"Subject: Someone Contacted You Through Your Website "
+            connection.sendmail(from_addr=igor_email, to_addrs=my_email, msg=f"Subject: Someone Contacted You Through Your Website "
                                                                        f"\n\n Their name is {full_name}, "
                                                                                     f"email is: {email},"
                                                                                     f"subject is:{subject}"
